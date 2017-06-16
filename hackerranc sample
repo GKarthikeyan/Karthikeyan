@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        String s1[]=new String [3];
+                int x[]=new int[3];
+                int st_len[]=new int[3];
+        int count=0; 
+        int max=0;
+            Scanner sc=new Scanner(System.in);
+            System.out.println("================================");
+            for(int i=0;i<3;i++){
+                s1[i]=sc.next();
+                 x[i]=sc.nextInt();
+                 st_len[i]=s1[i].length();
+               
+                if(st_len[i]<max)
+                {
+                    st_len[i]=max;
+                   // count++;
+                }
+                 System.out.println(count);
+                System.out.print(max);
+            System.out.print(s1[i]);
+                 System.out.format("%5s", "");
+                   System.out.format("%03d",x[i]);
+                 System.out.println(" ");
+            }
+            System.out.println("================================");
+
+    }
+}
